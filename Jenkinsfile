@@ -6,7 +6,7 @@ pipeline {
                 [key: 'timestamp',value: '$.timestamp'],
                 [key: 'nodeId',value: '$.nodeId'],
                 [key: 'initiator',value: '$.initiator'],
-                [key: 'action',value: '$.action'],
+                [key: 'action',value: '$.action', default: 'NOOP'],
                 [key: 'repositoryName',value: '$.repositoryName'],
                 [key: 'asset_id',value: '$.asset.id'],
                 [key: 'asset_assetId',value: '$.asset.assetId'],
